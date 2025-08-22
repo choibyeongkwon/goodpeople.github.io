@@ -40,7 +40,7 @@
 
   <div class="toolbar">
     <button id="btn-add" class="primary">+ 사용자 추가</button>
-    <span class="muted">입력 즉시 저장됩니다. (15초마다 자동 동기화)</span>
+    <span class="muted"></span>
   </div>
 
   <div id="status" class="muted"></div>
@@ -230,7 +230,7 @@ async function delRow(id) {
 $('#btn-add').addEventListener('click', addUser);
 apiGet();
 setTimeout(() => {
-  setInterval(() => apiGet({silent:true}), 5000);
+  setInterval(() => apiGet({silent:true}), 15000);
 }, Math.floor(Math.random()*2000));
 </script>
 </body>
