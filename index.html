@@ -230,7 +230,7 @@ async function delRow(id) {
 $('#btn-add').addEventListener('click', addUser);
 apiGet();
 setTimeout(() => {
-  setInterval(() => apiGet({silent:true}), 1000);
+  setInterval(() => apiGet({silent:true}), 5000);
 }, Math.floor(Math.random()*2000));
 </script>
 </body>
